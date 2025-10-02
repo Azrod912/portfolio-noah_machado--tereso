@@ -366,19 +366,23 @@ body.dark .timeline-item {
   }
 
   nav ul.nav-menu {
-    display: none;
-    flex-direction: column;
-    background: #222;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 220px;
-    padding: 15px;
-    border-radius: 0 0 8px 8px;
-  }
+nav ul.nav-menu {
+  max-height: 0;
+  overflow: hidden;
+  flex-direction: column;
+  background: #222;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 220px;
+  border-radius: 0 0 8px 8px;
+  transition: max-height 0.4s ease;
+}
 
-  nav ul.nav-menu.show {
-    display: flex;
+nav ul.nav-menu.show {
+  max-height: 500px; /* assez grand pour contenir tous les liens */
+}
+
   }
 
   .menu-toggle {
@@ -391,3 +395,12 @@ body.dark .timeline-item {
   }
 }
 
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #ffdd57;
+  width: 0%;
+  z-index: 2000;
+}

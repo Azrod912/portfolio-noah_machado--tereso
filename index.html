@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styleV02.css">
 </head>
 <body>
+    <div id="progress-bar"></div>
     <!-- Navigation -->
     <header>
         <button id="darkModeToggle">🌙</button>
@@ -218,6 +219,13 @@
     navMenu.classList.toggle("show");
   });
 </script>
+<script>
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    document.getElementById("progress-bar").style.width = progress + "%";
+  });
+</script>
 </body>
-
 </html>
