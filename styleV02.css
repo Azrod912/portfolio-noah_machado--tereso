@@ -376,13 +376,13 @@ nav ul.nav-menu {
   width: 220px;
   border-radius: 0 0 8px 8px;
   transition: max-height 0.4s ease;
+  padding: 0 15px; /* pas de padding au départ */
 }
 
 nav ul.nav-menu.show {
   max-height: 500px; /* assez grand pour contenir tous les liens */
+  padding: 15px;
 }
-
-  }
 
   .menu-toggle {
     display: block;
@@ -392,7 +392,7 @@ nav ul.nav-menu.show {
     margin: 10px 0;
     text-align: right;
   }
-
+}
 #progress-bar {
   position: fixed;
   top: 0;
@@ -401,6 +401,4 @@ nav ul.nav-menu.show {
   background: #ffdd57;
   width: 0%;
   z-index: 2000;
-
 }
-
