@@ -365,7 +365,6 @@ body.dark .timeline-item {
     position: relative;
   }
 
-  nav ul.nav-menu {
 nav ul.nav-menu {
   max-height: 0;
   overflow: hidden;
@@ -403,4 +402,5 @@ nav ul.nav-menu.show {
   background: #ffdd57;
   width: 0%;
   z-index: 2000;
+
 }
