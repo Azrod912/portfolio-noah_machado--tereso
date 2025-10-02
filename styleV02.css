@@ -402,3 +402,53 @@ nav ul.nav-menu.show {
   width: 0%;
   z-index: 2000;
 }
+
+.btn.contact-mail {
+  background: #0077cc;
+  color: white;
+}
+
+.btn.contact-mail:hover {
+  background: #005fa3;
+}
+
+.btn.contact-linkedin {
+  background: #0A66C2;
+  color: white;
+}
+
+.btn.contact-linkedin:hover {
+  background: #084b94;
+}
+
+.contact-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.btn.status {
+  cursor: default; /* pas de main au survol */
+  pointer-events: none; /* empêche tout clic */
+  font-weight: bold;
+}
+
+.btn.dispo {
+  background: #28a745; /* vert */
+  color: white;
+}
+
+.btn.dispo:hover {
+  background: #218838;
+}
+
+.btn.mobilite {
+  background: #17a2b8; /* bleu turquoise */
+  color: white;
+}
+
+.btn.mobilite:hover {
+  background: #117a8b;
+}
