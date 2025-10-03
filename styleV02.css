@@ -249,6 +249,12 @@ nav ul li a.active {
 .cert-logo {
   font-size: 1.2rem;
 }
+.cert-logo img {
+  width: 32px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
 .cert-badge p {
   margin: 0;
   color: #444;
