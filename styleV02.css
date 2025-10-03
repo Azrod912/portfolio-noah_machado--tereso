@@ -590,3 +590,93 @@ body.dark .cert-title {
 body.dark .cert-badge p {
   color: #ddd;
 }
+
+/* Pourquoi moi — layout */
+.why-section h2 {
+  margin-bottom: 8px;
+}
+.why-intro {
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.why-card {
+  background: #ffffff;
+  border: 1px solid #e6eef8;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.why-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+  border-color: #d7e4f6;
+}
+
+.why-icon {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.why-card h3 {
+  color: #0a4f86;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.why-text {
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Tags */
+.why-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+.tag {
+  background: #f0f7ff;
+  color: #1f588f;
+  border: 1px solid #cfe5ff;
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .why-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Dark mode */
+body.dark .why-card {
+  background: #2a2a2a;
+  border-color: #3a3f46;
+  box-shadow: none;
+}
+body.dark .why-intro,
+body.dark .why-text {
+  color: #ddd;
+}
+body.dark .why-card h3 {
+  color: #cfe5ff;
+}
+body.dark .tag {
+  background: #133b5f;
+  color: #cfe5ff;
+  border-color: #235b8f;
+}
